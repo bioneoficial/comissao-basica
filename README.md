@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Calculadora de Comissão - Studio 13
 
-## Getting Started
+Uma aplicação web desenvolvida com Next.js e Tailwind CSS para calcular comissões de tatuadores do Studio 13 com base no tipo de pagamento. Esta é uma single page application (SPA) que permite o cálculo rápido e fácil das comissões sem a necessidade de armazenamento de dados.
 
-First, run the development server:
+## Funcionalidades
+
+- Input de valor com máscara monetária brasileira
+- Seleção do tipo de pagamento com taxas de comissão pré-configuradas
+- Adição, edição e exclusão de entradas
+- Cálculo automático de comissões
+- Visualização detalhada de resultados
+- Exportação para PDF (a ser implementado)
+- Interface responsiva e moderna
+
+## Tabela de Comissões
+
+- DINHEIRO/TRANS/PIX: 60%
+- Débito: 55,63%
+- Crédito: 54,62%
+- 2x S/Juros: 53,36%
+- 3x S/Juros: 52,95%
+- 4x S/Juros: 52,54%
+- 5x S/Juros: 52,13%
+- 6x S/Juros: 51,73%
+- 7x S/Juros: 51,33%
+- 8x S/Juros: 50,93%
+- 9x S/Juros: 50,55%
+- 10x S/Juros: 50,16%
+
+## Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [React Hook Form](https://react-hook-form.com)
+- [React Number Format](https://github.com/s-yadav/react-number-format)
+- [Heroicons](https://heroicons.com)
+
+## Como Executar
+
+1. Clone o repositório
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Esta aplicação pode ser facilmente implantada na Vercel:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fstudio13-tattoo-calculator)
