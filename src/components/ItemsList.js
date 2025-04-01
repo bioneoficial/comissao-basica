@@ -75,15 +75,17 @@ export default function ItemsList({ items, onDeleteItem, onEditItem, calculation
                   <td className="px-3 py-2 text-right text-sm">
                     <button
                       onClick={() => onEditItem(item)}
-                      className="text-indigo-600 hover:text-indigo-900 mr-3 inline-flex items-center justify-center"
+                      className="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 font-medium py-1 px-3 rounded mr-2 inline-flex items-center"
                     >
-                      <PencilIcon className="h-4 w-4" />
+                      <PencilIcon className="h-4 w-4 mr-1" />
+                      <span>Editar</span>
                     </button>
                     <button
                       onClick={() => onDeleteItem(item.id)}
-                      className="text-red-600 hover:text-red-900 inline-flex items-center justify-center"
+                      className="bg-red-100 hover:bg-red-200 text-red-700 font-medium py-1 px-3 rounded inline-flex items-center"
                     >
-                      <TrashIcon className="h-4 w-4" />
+                      <TrashIcon className="h-4 w-4 mr-1" />
+                      <span>Excluir</span>
                     </button>
                   </td>
                 )}
